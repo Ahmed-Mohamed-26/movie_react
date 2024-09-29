@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { LangChange } from "../context/context";
-import { changeLanguage } from "../redux/Slice/language"; // التأكد من مسار الاستيراد الصحيح
-
+import { changeLanguage } from "../redux/Slice/language";   
 const MyNavbar = () => {
   const favoritesCount = useSelector(
     (state) => state.favorites.favorites.length
